@@ -1,0 +1,4 @@
+User-agent: *
+allow: /
+
+Sitemap: https://giftforpakistan.com/sitemap.xml

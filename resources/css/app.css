@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply font-quick outline-none;
+}
+
+button, a{
+    @apply cursor-pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+[x-cloak]{
+    display: none !important;
+}
+
+h1,h2,h3,h4,h5{
+    @apply font-bold;
+}
+section .container, nav .container, header .container, footer .container{
+    max-width: 1540px;
+    margin: auto;
+}
+
+footer .icons{
+    @apply h-full text-main mr-2;
+}
+
+footer .flinks li{
+    @apply mb-2 text-[15px] transition-all font-medium text-dark;
+}
+footer .linking li:hover{
+    @apply transition-all ml-3 text-main;
+}
+.fixed_class{
+    @apply fixed top-0 left-0 z-30 h-screen w-full bg-dark bg-opacity-90 flex justify-center items-center;
+}
+.blog p, a, article, ul, ol{
+    color: #4d5b7c;
+}
+.blog ul, ol{
+    margin-left: 30px;
+    list-style-type: disc;
+    margin-bottom: 15px;
+}
+
+.blog ul li, ol li{
+    margin: 10px 0px;
+}
+.blog p{
+    @apply mb-[15px] leading-8;
+
+}
+.blog  a {
+    color: #006FFF;
+    text-decoration: underline;
+}
+
+.blog img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.blog h1, h2, h3, h4, h5, h6{
+    color: #2C374B;
+    font-weight: bolder;
+}
+
+main .links a{
+    padding: 5px 8px;    
+}
+main h2{
+    font-size: 28px;
+}
+main h3{
+    font-size: 23px;
+}
+main h4{
+    font-size: 19px;
+}
+
+main img{
+    margin: 20px 0px;
+}
+
+main .small_img{
+    margin: auto;
+    max-width: 600px;
+}
+
+.code p, .code p code{
+    @apply text-gray-300;
+}
+
+main .code{
+    @apply p-5 bg-gray-700 text-gray-300 rounded-lg mb-4 w-full break-words;
+}
+main .code span{
+    @apply text-red-400;
+}
+
+main .step_links {
+    @apply flex flex-col list-disc;
+}
+
+.policy{
+    @apply text-dark;
+}
+
+
+.policy h1, .policy h2{
+    @apply mb-2;
+}
+
+.policy p{
+    @apply mb-3;
+}
